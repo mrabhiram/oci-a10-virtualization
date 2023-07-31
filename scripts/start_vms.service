@@ -1,0 +1,11 @@
+[Unit]
+Description=Start VMs on Reboot of the Bare Metal server
+After=default.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/opc/scripts/start_vms.sh
+
+[Install]
+WantedBy=multi-user.target

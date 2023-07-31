@@ -1,0 +1,11 @@
+[Unit]
+Description=Enable GPU Cards on Reboot of the server
+After=default.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/lib/nvidia/sriov-manage -e ALL
+
+[Install]
+WantedBy=multi-user.target

@@ -6,6 +6,12 @@ An terraform + Linux automation to virtualize A10 instance in OCI and create pub
 1. OCI tenancy should be approved for Level 2 networking. This script requires VLAN. For more info: https://docs.oracle.com/en-us/iaas/Content/VMware/Tasks/ocvsmanagingl2net.htm
 2. This script takes in an existing VCN which has atleast one public subnet and one private subnet. This is in the form of an terraform input variable to the script.
 3. This script needs Baremetal GPU A10 in OCI. Please make sure A10 GPUs are enabled in the OCI tenancy. 
+4. This script uses linux qcow2 image to provision the required VMs. For our purposes, we have used simple ubuntu 20_04 qcow2 disk image. Disk images are faster to load, that is the reason its better to use disk images so the whole automation is faster to execute.
+5. This script expects an object storage bucket named "AutomationScripts" with the following items in it. 
+	a. NVIDIA host drivers. In this script we used 510.60.02 NVIDIA drivers
+	b. Linux ubuntu qcow2 image for the VMs.
+	c. Linux scripts for the automation. (scripts directory attached in this repo). We make the scripts available in the object storage, so that its easier for us to tweak Linux code for future releases.
+	Please reach out to understand more about this 
 
 Attached is the workflow of how the automation works. 
 

@@ -2,19 +2,19 @@
 // Licensed under the Mozilla Public License v2.0
 
 variable "tenancy_ocid" {
-  default = "ocid1.tenancy.oc1..aaaaaaaaiyavtwbz4kyu7g7b6wglllccbflmjx2lzk5nwpbme44mv54xu7dq"
+  default = "ocid1.tenancy.oc1..id"
 }
 
 variable "user_ocid" {
-  default = "ocid1.user.oc1..aaaaaaaasg3uww6vbgiolhdwcpawog57ibcxfu5dzyxpdtokw35gjqywt3eq"
+  default = "ocid1.user.oc1..id"
 }
 
 variable "fingerprint" {
-  default = "1c:17:13:90:7c:f0:ef:d5:52:01:c7:80:f6:84:ce:72"
+  default = "<fingerprint>"
 }
 
 variable "private_key_path" {
-  default = "/Users/aampabat/.oci/oci_api_key.pem"
+  default = "<pem/key/path>"
 }
 
 variable "region" {
@@ -22,15 +22,15 @@ variable "region" {
 }
 
 variable "compartment_ocid" {
-  default = "ocid1.compartment.oc1..aaaaaaaaei5gupk2wigahybktwh5tlcjq7z3vwxybooe222l5atv3p25o7za"
+  default = "ocid1.compartment.oc1..id"
 }
 
 variable "ssh_public_key" {
- default = "/Users/aampabat/Documents/OCI Deck/SSH/ssh-key-a10.pub"
+ default = "ssh/key/path/ssh-key.pub"
 }
 
 variable "ssh_private_key" {
- default = "/Users/aampabat/Documents/OCI Deck/SSH/ssh-key-a10.key"
+ default = "ssh/key/path/ssh-key.key"
 }
 
 
@@ -57,11 +57,11 @@ variable "availability_domain" {
 }
 
 variable "subnet_id" {
-  default = "ocid1.subnet.oc1.iad.aaaaaaaavmbfmuxw37alwaeax37urat47ki3woiev5424qmgbr6m6tqzxr3a"
+  default = "ocid1.subnet.oc1..ocid"
 }
 
 variable "vcn_id" {
-  default = "ocid1.vcn.oc1.iad.amaaaaaawe6j4fqam5wc5op6n6xgpqjzghezl6osbnzxm2wxe3crtzuwq35a"
+  default = "ocid1.vcn.oc1.iad.ocid"
 }
 
 variable "vlan_cidr_block" {}

@@ -1,5 +1,5 @@
 # oci-a10-virtualization
-An terraform + Linux automation to virtualize A10 instance in OCI and create public VMs with vGPUs attached to it. 
+An terraform + Linux automation to virtualize A10 instance in OCI and create public VMs with vGPUs attached using OCI L2 VLAN Networking stack.
 
 
 # Below are the required assumptions for this terraform automation
